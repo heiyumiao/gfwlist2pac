@@ -19,7 +19,7 @@ jobs:
         git config --global user.email "you@example.com"
 
     - name: Download gfwlist.pac
-      run: curl -o gfwlist.pac http://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
+      run: curl -o gfwlist.pac https://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
 
     - name: Commit and push changes if there are any
       run: |
@@ -33,7 +33,7 @@ jobs:
 
 
     - name: Set up Gitea remote
-      run: git remote add gitea https://heiyu:12345678@www.tangtuan.top:5002/heiyu/pac.git
+      run: git remote add gitea http://heiyu:12345678@www.tangtuan.top:5002/heiyu/pac.git
 
     - name: Push to Gitea
       run: |
