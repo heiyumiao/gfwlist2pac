@@ -33,7 +33,7 @@ jobs:
 
 
     - name: Set up Gitea remote
-      run: git remote add gitea http://heiyu:12345678@www.tangtuan.top:5002/heiyu/pac.git
+      run: git remote add gitea http://heiyu:12345678@www.tangtuan.top:5002/heiyu/pac-sync-from-github.git
 
     - name: Push to Gitea
       run: |
