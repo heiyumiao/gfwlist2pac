@@ -22,6 +22,9 @@ jobs:
 
     - name: Download gfwlist.pac
       run: curl -o gfwlist.pac https://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
+    
+    - name: Modify first line of gfwlist.pac
+      run: sed -i '1s/.*/var proxy = "PROXY ipv6.tangtuan.top:5016; DIRECT;";/' gfwlist.pac
 
     - name: Commit and push changes if there are any
       run: |
