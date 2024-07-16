@@ -1,4 +1,4 @@
-var proxy = "PROXY ipv6.tangtuan.top:5016; DIRECT;";
+var proxy = "PROXY ipv6.tangtuan.top:5020; DIRECT;";
 var rules = [
     [
         [],
