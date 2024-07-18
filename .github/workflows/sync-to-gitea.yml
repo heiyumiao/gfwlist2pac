@@ -25,8 +25,8 @@ jobs:
       
     - name: Pull from Gitea
       run: |
-        git fetch gitea
-        git merge gitea/master --no-edit
+        git fetch gitea --force
+        git merge gitea/main --no-edit
         
     - name: Download gfwlist.pac
       run: curl -o gfwlist.pac https://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
