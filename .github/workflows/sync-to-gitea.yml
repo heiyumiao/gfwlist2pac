@@ -2,7 +2,7 @@ name: Sync GFWList to Gitea
 
 on:
   schedule:
-    - cron: '0 0 * * 6'  # 每天运行一次
+    - cron: '0 0 * * 6'  # 每周6运行一次
   workflow_dispatch:  # 手动触发
 
 jobs:
@@ -36,8 +36,8 @@ jobs:
 
     - name: Add websites to rules
       run: |
-        sed -i '/var rules = \[/a \ \ \ \ [\n\ \ \ \ \ \ "byr.pt",\n\ \ \ \ \ \ "cloudflare.com"\n\ \ \ \ ],' gfwlist.pac
-        
+        sed -i '/"aftygh.gov.tw"/i \ \ \ \ \ \ "cloudflare.com",\n\ \ \ \ \ \ "byr.pt",' gfwlist.pac
+   
     - name: Commit and push changes if there are any
       run: |
         git add gfwlist.pac
