@@ -36,7 +36,7 @@ jobs:
 
     - name: Add websites to rules
       run: |
-        sed -i '/"aftygh.gov.tw"/i \ \ \ \ \ \ "cloudflare.com",\n\ \ \ \ \ \ "byr.pt",' gfwlist.pac
+        sed -i '/"aftygh.gov.tw"/i \ \ \ \ \ \ \ \ \ \ \ \  "cloudflare.com",\n\ \ \ \ \ \ \ \ \ \ \ \ "byr.pt",' gfwlist.pac
    
     - name: Commit and push changes if there are any
       run: |
