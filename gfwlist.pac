@@ -1,15 +1,13 @@
 var proxy = "PROXY ipv6.tangtuan.top:5020; DIRECT;";
 var rules = [
     [
-      "byr.pt",
-      "cloudflare.com"
-    ],
-    [
         [],
         []
     ],
     [
         [
+      "cloudflare.com",
+      "byr.pt",
             "aftygh.gov.tw",
             "aide.gov.tw",
             "aliyun.com",
