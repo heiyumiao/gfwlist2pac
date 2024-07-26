@@ -6,8 +6,6 @@ var rules = [
     ],
     [
         [
-      "cloudflare.com",
-      "byr.pt",
             "aftygh.gov.tw",
             "aide.gov.tw",
             "aliyun.com",
@@ -92,6 +90,8 @@ var rules = [
             "zhongsou.com"
         ],
         [
+             "cloudflare.com",
+            "byr.pt",
             "000webhost.com",
             "030buy.com",
             "0rz.tw",
